@@ -183,7 +183,11 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/images/teaser.mp4"
+        <source src="./static/videos/real.mp4"
+                type="video/mp4/">
+      </video> -->
+      <!-- <video id="matting-video" autoplay controls muted loop playsinline width="100%">
+        <source src="./static/videos/realworld-writeCoRL.mp4"
                 type="video/mp4">
       </video> -->
       <img src="./static/images/teaser.jpg" alt="Teaser Image" width="100%" height="100%">
@@ -309,12 +313,91 @@
   <div class="container is-max-desktop">
     <div class="hero-body has-text-centered">
       <h2 class="title is-3">Task Gallery</h2>
-      <img src="./static/images/tasks.jpg" alt="Teaser Image" width="100%" height="100%">
+
+      <div class="columns is-centered">
+        <!-- Manipulation. -->
+        <div class="column">
+          <h2 class="title is-4">Manipulation</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video id="matting-video" controls muted loop playsinline height="100%">
+                <source src="./static/videos/task-drawheart.mp4"
+                        type="video/mp4">
+              </video>
+              <p>Sand Painting</p>
+            </div>
+            <div class="column content">
+              <video id="matting-video" controls muted loop playsinline height="100%">
+                <source src="./static/videos/task-scoop-v2.mp4"
+                        type="video/mp4">
+              </video>
+              <p>Scoop Out</p>
+            </div>
+          </div>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video id="matting-video" controls muted loop playsinline height="100%">
+                <source src="./static/videos/task-dig.mp4"
+                        type="video/mp4">
+              </video>
+              <p>Dig A Hole</p>
+            </div>
+            <div class="column content">
+              <video id="matting-video" controls muted loop playsinline height="100%">
+                <source src="./static/videos/task-smooth.mp4"
+                        type="video/mp4">
+              </video>
+              <p>Smooth Surface</p>
+            </div>
+          </div>
+        </div>
+        <!--/ Manipulation. -->
+        <!-- Locomotion -->
+        <div class="column">
+          <h2 class="title is-4">Locomotion</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video id="matting-video" controls muted loop playsinline height="100%">
+                <source src="./static/videos/task-sandwalk.mp4"
+                        type="video/mp4">
+              </video>
+              <p>Quadruped Sand Walk</p>
+            </div>
+            <div class="column content">
+              <video id="matting-video" controls muted loop playsinline height="100%">
+                <source src="./static/videos/task-snowwalk.mp4"
+                        type="video/mp4">
+              </video>
+              <p>Quadruped Snow Walk</p>
+            </div>
+          </div>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video id="matting-video" controls muted loop playsinline height="100%">
+                <source src="./static/videos/task-stand.mp4"
+                        type="video/mp4">
+              </video>
+              <p>Humanoid Stand</p>
+            </div>
+            <div class="column content">
+              <video id="matting-video" controls muted loop playsinline height="100%">
+                <source src="./static/videos/task-walk.mp4"
+                        type="video/mp4">
+              </video>
+              <p>Humanoid Walk</p>
+            </div>
+          </div>
+        </div>
+        <!--/ Locomotion -->
+      </div>
+
+      <!-- <img src="./static/images/tasks.jpg" alt="Teaser Image" width="100%" height="100%"> -->
       <h2 class="subtitle has-text-centered">
         4 manipulation tasks and 4 locomotion tasks proposed in UBSOFT
       </h2>
     </div>
   </div>
+
 </section>
 <!--/ Task Gallery. -->
 
@@ -323,11 +406,48 @@
   <div class="container is-max-desktop">
     <div class="hero-body has-text-centered">
       <h2 class="title is-3">Real-World Experiments</h2>
-      <img src="./static/images/realworld.png" alt="Teaser Image" width="100%" height="100%">
+      
+      <div class="columns is-centered">
+        <!-- Writing. -->
+        <div class="column">
+          <h2 class="title is-4">Writing "CoRL"</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video id="matting-video" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/realworld-writeCoRL.mp4"
+                        type="video/mp4">
+              </video>
+              <p>
+                <!-- As a byproduct of our method, we can also solve the matting problem by ignoring
+                samples that fall outside of a bounding box during rendering. -->
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <!--/ Writing. -->
+        <!-- Scoop -->
+        <div class="column">
+          <div class="content">
+            <h2 class="title is-4">Scoop Out</h2>
+            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/realworld-scoop.mp4"
+                      type="video/mp4">
+            </video>
+            <p>
+              <!-- Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
+              would be impossible without nerfies since it would require going through a wall. -->
+            </p>
+          </div>
+        </div>
+        <!--/ Scoop -->
+      </div>
+      
+      <!-- <img src="./static/images/realworld.png" alt="Teaser Image" width="100%" height="100%"> -->
       <h2 class="subtitle has-text-centered">
         Sand painting and scooping task rollouts in the real world using an XArm.<br>
-        <b>Left:</b> writing "CoRL" on the sand.&nbsp;&nbsp; 
-        <b>Right:</b> scoop things out of the sand.
+        <!-- <b>Left:</b> writing "CoRL" on the sand.&nbsp;&nbsp; 
+        <b>Right:</b> scoop things out of the sand. -->
       </h2>
     </div>
   </div>
